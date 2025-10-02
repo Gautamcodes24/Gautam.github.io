@@ -1,0 +1,186 @@
+{
+  "projects": [
+    {
+      "id": "face-recognition-system",
+      "title": "Smart Face Recognition System",
+      "category": "AI & Machine Learning",
+      "categoryIcon": "🤖",
+      "badge": "HOT",
+      "badgeType": "hot",
+      "description": "Advanced AI-powered face recognition application with real-time detection, biometric authentication, and secure database integration using Python and OpenCV.",
+      "detailedDescription": "Developed a comprehensive face recognition system using state-of-the-art deep learning models. The system features real-time face detection, recognition accuracy of 99.8%, and secure biometric authentication. Implemented with OpenCV for computer vision, TensorFlow for deep learning models, and Flask for the web interface. The system includes user registration, face encoding storage, and real-time recognition with MongoDB database integration.",
+      "image": "images/Portfolio/face-recog.png",
+      "technologies": [
+        { "name": "Python", "color": "neon-purple" },
+        { "name": "OpenCV", "color": "neon-blue" },
+        { "name": "TensorFlow", "color": "neon-green" },
+        { "name": "Flask", "color": "neon-orange" },
+        { "name": "MongoDB", "color": "neon-pink" }
+      ],
+      "stats": [
+        { "label": "Accuracy", "value": "99.8%" },
+        { "label": "Response", "value": "< 50ms" }
+      ],
+      "status": {
+        "type": "active",
+        "label": "Active Project",
+        "indicator": "pulse"
+      },
+      "links": {
+        "live": "https://face-recognition.gautamcodes.com",
+        "github": "https://github.com/gautamkumar22/face-recognition-system"
+      },
+      "featured": true,
+      "completionDate": "2024-08",
+      "duration": "3 months"
+    },
+    {
+      "id": "ai-tutor-education-platform",
+      "title": "AI-Tutor Educational Platform",
+      "category": "EdTech & AI",
+      "categoryIcon": "🎓",
+      "badge": "TRENDING",
+      "badgeType": "trending",
+      "description": "AI-powered educational web application offering course creation, multimedia upload, and advanced student management for universities.",
+      "detailedDescription": "Built a scalable, AI-driven education platform for university professors and students. Delivered advanced RAG-based contextual responses, secure document uploads with OCR, JWT authentication, real-time chat, quiz engine, and interactive dashboards. Engineered with React.js (frontend), Flask (APIs), and deployed on Google Cloud with Docker and CI/CD. Served 1000+ students, reduced data entry time by 50%, and ensured enterprise-grade security and compliance.",
+      "image": "images/Portfolio/education.png",
+      "technologies": [
+        { "name": "React.js", "color": "neon-blue" },
+        { "name": "Redux", "color": "neon-purple" },
+        { "name": "Flask", "color": "neon-orange" },
+        { "name": "Docker", "color": "neon-cyan" },
+        { "name": "Google Cloud", "color": "neon-green" }
+      ],
+      "stats": [
+        { "label": "Students", "value": "1000+" },
+        { "label": "Data Entry Reduction", "value": "50%" }
+      ],
+      "status": {
+        "type": "deployed",
+        "label": "In Production",
+        "indicator": "deployed"
+      },
+      "links": {
+        "live": "https://ai-tutor.gautamcodes.com",
+        "github": "https://github.com/gautamkumar22/ai-tutor-platform"
+      },
+      "featured": true,
+      "completionDate": "2024-04",
+      "duration": "4 months"
+    },
+    {
+      "id": "virtual-engineering-team",
+      "title": "Virtual Engineering Team Platform",
+      "category": "AI Automation",
+      "categoryIcon": "🛠️",
+      "badge": "NEW",
+      "badgeType": "new",
+      "description": "Next-gen autonomous engineering platform featuring multi-agent orchestration, async FastAPI backend, AI-driven lifecycle automation, and MySQL optimization.",
+      "detailedDescription": "Led design and delivery of an Autonomous Software Engineering Platform. Built high-performance APIs with FastAPI, orchestrated with async/await logic, integrated multi-agent AI (LangGraph) for policy interpretation, and achieved 20% faster queries through MySQL optimization. Delivered automated code generation, QA, deployment, and a personal branding engine powered by OpenAI GPT-4. Resulted in 60% reduction in manual effort and accelerated client delivery.",
+      "image": "images/Portfolio/engineering.png",
+      "technologies": [
+        { "name": "FastAPI", "color": "neon-green" },
+        { "name": "MySQL", "color": "neon-blue" },
+        { "name": "LangGraph", "color": "neon-purple" },
+        { "name": "OpenAI GPT-4", "color": "neon-cyan" },
+        { "name": "Docker", "color": "neon-orange" }
+      ],
+      "stats": [
+        { "label": "Manual Effort", "value": "-60%" },
+        { "label": "Query Speedup", "value": "+20%" }
+      ],
+      "status": {
+        "type": "active",
+        "label": "Active Client Work",
+        "indicator": "pulse"
+      },
+      "links": {
+        "live": "https://engg-ai.gautamcodes.com",
+        "github": "https://github.com/gautamkumar22/virtual-engineering-team"
+      },
+      "featured": true,
+      "completionDate": "2024-06",
+      "duration": "3 months"
+    },
+    {
+      "id": "career-networking-bot",
+      "title": "Intelligent Career Assistant & Networking Bot",
+      "category": "Professional Automation",
+      "categoryIcon": "💼",
+      "badge": "PRO",
+      "badgeType": "pro",
+      "description": "Enterprise-grade networking assistant uniting React.js & Flask with AI-driven engagement tracking and automated code workflows.",
+      "detailedDescription": "Developed a responsive bot for career consultation and networking. Combined React.js frontend with Flask backend, deployed on AWS EC2. Delivered engagement tracking, push notifications (Pushover API), LinkedIn API integration, and automated code testing/deployment workflows. Achieved 75% increase in user interaction and 99.9% infrastructure uptime for production clients.",
+      "image": "images/Portfolio/personal.png",
+      "technologies": [
+        { "name": "React.js", "color": "neon-blue" },
+        { "name": "Vue.js", "color": "neon-green" },
+        { "name": "Flask", "color": "neon-orange" },
+        { "name": "AWS EC2", "color": "neon-cyan" },
+        { "name": "Pushover API", "color": "neon-yellow" }
+      ],
+      "stats": [
+        { "label": "Interaction Boost", "value": "75%" },
+        { "label": "Uptime", "value": "99.9%" }
+      ],
+      "status": {
+        "type": "deployed",
+        "label": "Production Bot",
+        "indicator": "deployed"
+      },
+      "links": {
+        "live": "https://careerbot.gautamcodes.com",
+        "github": "https://github.com/gautamkumar22/career-networking-bot"
+      },
+      "featured": true,
+      "completionDate": "2024-03",
+      "duration": "2 months"
+    },
+    {
+      "id": "project-code-vault",
+      "title": "Project Code Vault",
+      "category": "Code Management",
+      "categoryIcon": "🗃️",
+      "badge": "LATEST",
+      "badgeType": "latest",
+      "description": "Modern code snippets manager and secure vault built with Express, ReactJS (Vite), and Supabase for full-stack convenience.",
+      "detailedDescription": "Created a next-gen web application for efficiently organizing and securing code snippets and project templates. Designed a sleek and highly responsive UI in ReactJS with Vite, robust Express.js backend, JWT auth, real-time updates with Supabase, and encrypted storage. Integrated code search, quick copy, sharing links, syntax highlighting, and multi-device sync. Built for developers, by developers—streamlines personal and team workflows.",
+      "image": "images/Portfolio/Project-code-vault.png",
+      "technologies": [
+        { "name": "ReactJS (Vite)", "color": "neon-blue" },
+        { "name": "Express.js", "color": "neon-orange" },
+        { "name": "Supabase", "color": "neon-green" },
+        { "name": "JWT", "color": "neon-yellow" },
+        { "name": "Node.js", "color": "neon-cyan" }
+      ],
+      "stats": [
+        { "label": "Supported Users", "value": "500+" },
+        { "label": "Sync Latency", "value": "< 100ms" }
+      ],
+      "status": {
+        "type": "active",
+        "label": "Early Access",
+        "indicator": "pulse"
+      },
+      "links": {
+        "live": "https://codevault.gautamcodes.com",
+        "github": "https://github.com/gautamkumar22/code-vault"
+      },
+      "featured": false,
+      "completionDate": "2024-12",
+      "duration": "1 month"
+    }
+  ],
+  "metadata": {
+    "totalProjects": 5,
+    "featuredProject": "face-recognition-system",
+    "lastUpdated": "2024-12-19",
+    "categories": [
+      "AI & Machine Learning",
+      "EdTech & AI",
+      "AI Automation",
+      "Professional Automation",
+      "Code Management"
+    ]
+  }
+}

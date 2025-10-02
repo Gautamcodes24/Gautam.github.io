@@ -1,0 +1,181 @@
+/* Simple Holi Color Trail Effects - Lightweight and Smooth */
+
+.cursor-trail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.cursor-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform, opacity;
+  animation: holiFloat 1.5s ease-out forwards;
+}
+
+/* Holi color variations */
+.cursor-particle.holi-red {
+  background: radial-gradient(
+    circle,
+    rgba(255, 75, 75, 0.8) 0%,
+    rgba(255, 75, 75, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-pink {
+  background: radial-gradient(
+    circle,
+    rgba(255, 20, 147, 0.8) 0%,
+    rgba(255, 20, 147, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-orange {
+  background: radial-gradient(
+    circle,
+    rgba(255, 165, 0, 0.8) 0%,
+    rgba(255, 165, 0, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-yellow {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 0, 0.8) 0%,
+    rgba(255, 255, 0, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-green {
+  background: radial-gradient(
+    circle,
+    rgba(50, 205, 50, 0.8) 0%,
+    rgba(50, 205, 50, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-blue {
+  background: radial-gradient(
+    circle,
+    rgba(0, 191, 255, 0.8) 0%,
+    rgba(0, 191, 255, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-purple {
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.8) 0%,
+    rgba(138, 43, 226, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.cursor-particle.holi-magenta {
+  background: radial-gradient(
+    circle,
+    rgba(199, 21, 133, 0.8) 0%,
+    rgba(199, 21, 133, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+/* Simple floating animation like powder in air */
+@keyframes holiFloat {
+  0% {
+    opacity: 0.9;
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translate(var(--drift-x, 10px), var(--drift-y, -15px)) scale(1.2);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(var(--drift-x2, 25px), var(--drift-y2, -30px))
+      scale(1.1);
+  }
+  75% {
+    opacity: 0.3;
+    transform: translate(var(--drift-x3, 40px), var(--drift-y3, -45px))
+      scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--drift-x4, 60px), var(--drift-y4, -70px))
+      scale(0.5);
+  }
+}
+
+/* Larger powder particles for variety */
+.cursor-particle.large {
+  width: 10px;
+  height: 10px;
+  animation-duration: 2s;
+}
+
+.cursor-particle.medium {
+  width: 8px;
+  height: 8px;
+  animation-duration: 1.8s;
+}
+
+.cursor-particle.small {
+  width: 4px;
+  height: 4px;
+  animation-duration: 1.2s;
+}
+
+/* Subtle glow for more realistic powder effect */
+.cursor-particle::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: inherit;
+  filter: blur(2px);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Performance optimizations */
+.cursor-trail-container * {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Reduce effects on mobile for better performance */
+@media (max-width: 768px) {
+  .cursor-particle {
+    width: 4px;
+    height: 4px;
+    animation-duration: 1s;
+  }
+
+  .cursor-particle.large {
+    width: 6px;
+    height: 6px;
+  }
+
+  .cursor-particle.medium {
+    width: 5px;
+    height: 5px;
+  }
+}
